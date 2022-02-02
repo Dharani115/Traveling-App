@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    tools:context="com.android.trip_planning.Activity.register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_background"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="30dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:textStyle="bold"
+                    android:paddingBottom="40dp"
+                    android:text="P r a v a s i"
+                    android:textColor="#9b8b5d"
+                    android:textSize="35sp" />
+
+                <!--        <ImageView-->
+                <!--            android:layout_width="350dp"-->
+                <!--            android:layout_height="150dp"-->
+                <!--            android:src="@drawable/logo"-->
+                <!--            android:layout_gravity="center"/>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Appbarthem"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="40dp"
+                        android:drawableRight="@drawable/my_icon"
+                        android:background="@drawable/button_gradient"
+                        android:drawableBottom="#9b8b5d"
+                        android:gravity="center"
+                        android:hint="@string/name"
+                        android:textColorHint="@color/colorAccent"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:fontFamily="@font/niconne"
+                        android:textSize="25dp"
+                        android:textColor="#9b8b5d"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="40dp"
+                        android:drawableRight="@drawable/mail"
+                        android:background="@drawable/button_gradient"
+                        android:drawableBottom="#000"
+                        android:gravity="center"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:fontFamily="@font/niconne"
+                        android:textSize="25dp"
+                        android:textColor="#9b8b5d"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="40dp"
+                        android:drawableRight="@drawable/my_call"
+                        android:background="@drawable/button_gradient"
+                        android:gravity="center"
+                        android:hint="@string/phone_number"
+                        android:inputType="number"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/niconne"
+                        android:textSize="25dp"
+                        android:textColor="#9b8b5d"
+                        android:paddingRight="15dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:passwordToggleTint="@color/colorAccent"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/button_gradient"
+                        android:drawableBottom="#9b8b5d"
+                        android:gravity="center"
+                        android:hint="@string/prompt_password"
+                        android:inputType="textPassword"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/niconne"
+                        android:textSize="25dp"
+                        android:textColor="#9b8b5d"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="50dp"
+                    app:passwordToggleTint="@color/colorAccent"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/cpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="40dp"
+                        android:drawableBottom="#000"
+                        android:gravity="center"
+                        android:hint="Confirm Password"
+                        android:background="@drawable/button_gradient"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/niconne"
+                        android:textSize="25dp"
+                        android:textColor="#9b8b5d"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/withoutlogin"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:fontFamily="@font/actor"-->
+<!--                android:text="Continue without Login"-->
+<!--                android:textColor="#230909"-->
+<!--                android:textSize="15dp"/>-->
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loading"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_gradient"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/register"
+                android:textColor="#9b8b5d"
+                android:fontFamily="@font/sree_krushnadevaraya"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_gradient"
+                android:text="Already having Account"
+                android:textColor="#9b8b5d"
+                android:fontFamily="@font/sree_krushnadevaraya"
+                android:textSize="16sp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

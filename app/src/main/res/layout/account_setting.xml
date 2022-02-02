@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.AccountActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0f5355"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:onClick="homeback"
+                android:background="#00FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/header_title"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="9dp"
+                android:textColor="#9b8b5d"
+                android:textSize="20sp"
+                android:text="Account Settings"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="15dp"
+            android:background="@drawable/account_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="180dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="180dp"
+
+                android:src="@mipmap/profile"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/my_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/arapey"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:text=" Full name  "
+                        android:textColor="#A4BAB0"
+                        android:textSize="20sp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userName"
+                        android:gravity="left"
+                        android:paddingLeft="45dp"
+                        android:background="@null"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/arapey"
+                        android:textSize="18sp"
+                        android:hint="Trippy Master"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:textColor="#A4BAB0"
+                        android:drawableLeft="@drawable/mail"
+                        android:fontFamily="@font/arapey"
+                        android:drawablePadding="10dp"
+                        android:textSize="20sp"
+                        android:text="Email  "/>
+                    <TextView
+                        android:id="@+id/userEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="email"
+                        android:fontFamily="@font/arapey"
+                        android:layout_gravity="left"
+                        android:textColor="#000"
+                        android:paddingLeft="45dp"
+                        android:textSize="18sp"
+                        android:hint="Trippy_master@gmail.com" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="0dp"
+                        android:textColor="#A4BAB0"
+                        android:fontFamily="@font/arapey"
+                        android:layout_gravity="left"
+                        android:drawableLeft="@drawable/my_call"
+                        android:drawablePadding="10dp"
+                        android:textSize="20sp"
+                        android:text="Phone no "/>
+                    <EditText
+                        android:id="@+id/userPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textColor="#000"
+                        android:background="@null"
+                        android:fontFamily="@font/arapey"
+                        android:paddingLeft="45dp"
+                        android:textSize="18sp"
+                        android:hint="1234569874" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/update"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:elevation="5dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/my_home"
+            android:text="Save Changes"
+            android:textSize="16dp"
+            android:background="@drawable/button_gradient"
+            android:textColor="#9b8b5d"
+            android:textAllCaps="false"
+            android:contextClickable="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

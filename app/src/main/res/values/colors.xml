@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#2a7ee6</color>
+<color name="zircon">#e0e6e4</color>
+<color name="black">#292929</color>
+<color name="colorPrimaryDark">#0f5355</color>
+<color name="colorAccent">#9b8b5d</color>
+</resources>

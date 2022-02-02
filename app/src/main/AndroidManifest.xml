@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.trip_planning">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AboutUs"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".feedback" />
+        <activity android:name=".HelpCenter" />
+        <activity android:name=".Appinfo" />
+        <activity android:name=".Help" />
+        <activity android:name=".Aboutus" />
+        <activity android:name=".Activity.register" />
+        <activity android:name=".Activity.login" />
+        <activity android:name=".Activity.NavigatonDrawer" />
+        <activity android:name=".Activity.AccountActivity" />
+        <activity
+            android:name=".states.DetailedProductsActivity"
+            android:parentActivityName=".states.AndhraPradhesh" />
+        <activity android:name=".states.Manipur" />
+        <activity
+            android:name=".states.AndhraPradhesh"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.ArunachalPradesh"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Assam"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Bihar"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Chhattisgarh"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Goa"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Gujarath"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Hariyana"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.HimachalPradesh"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Jharkhand"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Karnataka"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Kerala"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.MadhiyaPradesh"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Maharastra"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Meghalaya"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Mizoram"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Nagaland"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Odisha"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Punjab"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Rajasthan"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Sikkim"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.TamilNadu"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Telangana"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Tripura"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.Uttarakhand"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.UttarPradesh"
+            android:parentActivityName=".states.StateView" />
+        <activity
+            android:name=".states.WestBengal"
+            android:parentActivityName=".states.StateView" />
+        <activity android:name=".states.StateView" />
+        <activity
+            android:name=".top_places.Top_DetailedProductsActivity"
+            android:parentActivityName=".top_places.adventure" />
+        <activity
+            android:name=".top_places.hill_stations"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.beaches"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.falls"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.historic_places"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.temples"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.adventure"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.trucking"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity
+            android:name=".top_places.zoos"
+            android:parentActivityName=".Activity.NavigatonDrawer" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

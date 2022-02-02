@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/actor</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/akronim</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/almendra_italic</item>
+        <item>@font/amatic_sc_bold</item>
+        <item>@font/arizonia</item>
+        <item>@font/arvo</item>
+        <item>@font/arya</item>
+        <item>@font/belgrano</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/chicle</item>
+        <item>@font/dr_sugiyama</item>
+        <item>@font/flamenco</item>
+        <item>@font/great_vibes</item>
+        <item>@font/niconne</item>
+        <item>@font/nosifer</item>
+        <item>@font/princess_sofia</item>
+    </array>
+</resources>

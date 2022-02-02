@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Pravasi</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="login">Sign-in</string>
+    <string name="create_new">Click here for register</string>
+    <string name="not_register">Already have Account.</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="loginregister">Create an Account</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter your phone number</string>
+    <string name="email_error">Please enter your email address</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="facebook_app_id">1065826193947549</string>
+    <string name="fb_login_protocol_scheme">fb1065826193947549</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="cancel_login">was canceled</string>
+    <string name="error_login">an error occurred while entering</string>
+    <string name="logout">Sign off</string>
+    <string name="copyright">2021-2021 Pravasi inc.</string>
+</resources>

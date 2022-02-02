@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.NavigatonDrawer"
+    tools:showIn="@layout/app_bar_navigaton_drawer">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/sliderImage"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_centerInParent="true"
+                app:sliderAnimationDuration="400"
+                app:sliderStartAutoCycle="true"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="20"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="1dp"
+                app:sliderIndicatorSelectedColor="#E91E63"
+                app:sliderIndicatorRtlMode="auto"
+                app:sliderScrollTimeInSec="3"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_btn"
+                android:text="Select States"
+                android:textColor="#9b8b5d"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:layout_marginTop="-25dp"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:id="@+id/selectstates"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beaches"
+                    android:textSize="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/beaches"
+                        android:elevation="10dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/viewallbeach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Adventure places"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/Adventureplace"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewalladventure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Historical Places"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/Historic"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewallhistoric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Falls"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/falls"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewallfalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hill Station"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/hills"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewallhills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temples"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/temples"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewalltemples"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safari"
+                    android:paddingLeft="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/zoos"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewallzoos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Trucking"
+                    android:textSize="20dp"
+                    android:textColor="#9b8b5d"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/trucking"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="80dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/viewalltrucking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/all_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:text="View More"
+                    android:textAllCaps="false"
+                    android:textColor="#9b8b5d"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
