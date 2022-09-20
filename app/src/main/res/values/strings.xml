@@ -19,7 +19,7 @@
     <string name="fb_login_protocol_scheme">fb1065826193947549</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="welcome">Bienvenido</string>
+    <string name="welcome">Welcome</string>
     <string name="cancel_login">was canceled</string>
     <string name="error_login">an error occurred while entering</string>
     <string name="logout">Sign off</string>

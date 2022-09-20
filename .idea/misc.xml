@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/drawable-v24/button_gradient.xml" value="0.1414715719063545" />
         <entry key="..\:/Project/Trip_Planning/app/src/main/res/drawable-v24/layout_bg.xml" value="0.11666666666666667" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/activity_aboutus.xml" value="0.13110367892976588" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/activity_detailed_products.xml" value="0.13110367892976588" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/activity_navigaton_drawer.xml" value="0.13110367892976588" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/app_bar_navigaton_drawer.xml" value="0.13110367892976588" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/content_navigaton_drawer.xml" value="0.13110367892976588" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/login.xml" value="0.13243243243243244" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/nav_header_navigaton_drawer.xml" value="0.13110367892976588" />
         <entry key="..\:/Project/Trip_Planning/app/src/main/res/layout/top_detail_activity.xml" value="0.1" />
+        <entry key="..\:/Project/Trip_Planning/app/src/main/res/menu/activity_navigaton_drawer_drawer.xml" value="0.13110367892976588" />
       </map>
     </option>
   </component>
